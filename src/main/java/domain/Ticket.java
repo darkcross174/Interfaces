@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Ticket implements Comparable{
+public class Ticket implements Comparable {
     private int id;
     private int price;
     private String fromAirport;
