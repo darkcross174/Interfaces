@@ -20,4 +20,11 @@ public class Ticket implements Comparable {
         return price = ticket.price;
     }
 
+    public boolean matches(String fromAirport, String toAirport) {
+        if (this.getFromAirport().equalsIgnoreCase(fromAirport) && this.getToAirport().equalsIgnoreCase(toAirport)) {
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -9,7 +9,7 @@ public class TicketRepository {
         int length = items.length + 1;
         Ticket[] tmp = new Ticket[length];
         System.arraycopy(items, 0, tmp, 0, items.length);
-        int lastIndex = tmp.length + 1;
+        int lastIndex = tmp.length - 1;
         tmp[lastIndex] = item;
         items = tmp;
     }
